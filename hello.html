@@ -4,9 +4,33 @@
   <head>
     <meta charset="utf-8">
     <title>Week 1</title>
+
+    <style>
+
+    </style>
   </head>
 
   <body>
+
+    <script>
+      var w = document.write.bind(document)
+      w("Hello Jeff");
+
+      function displayName(name) {
+        document.write("Howdy, " + name);
+        var a = 5
+        document.write(a);
+      }
+      function displayToConsole(name) {
+        console.debug("Howdy, " + name);
+      }
+      function getName(f) {
+        var name = prompt("Wazzzzzup");
+        f(name);
+      }
+
+    </script>
+
     <h1>Hello!</h1>
 
     <p>
@@ -16,7 +40,7 @@
     <p>
       We meet in Young 302 every Thursday night.
     </p>
-    
+
   </body>
 
 </html>
