@@ -12,10 +12,8 @@
 
   <body>
 
-    <script>
-      var w = document.write.bind(document)
-      w("Hello Jeff");
 
+    <script>
       function displayName(name) {
         document.write("Howdy, " + name);
         var a = 5
@@ -31,15 +29,21 @@
 
     </script>
 
-    <h1>Hello!</h1>
+    <h1>Grocery List</h1>
 
-    <p>
-      Welcome to MPCS 52554 - Advanced Web Development.
-    </p>
+    <p><a href="#" onclick="alert('Hello!');">Add Item</a></p>
 
-    <p>
-      We meet in Young 302 every Thursday night.
-    </p>
+    <ul>
+
+    </ul>
+
+    <script>
+      ul = document.getElementsByTagName("ul")[0];
+      list_item = document.createElement("li");
+      text_content = document.createTextNode("Ice Cream");
+      list_item.appendChild(text_content);
+      ul.appendChild(list_item);
+    </script>
 
   </body>
 
