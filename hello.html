@@ -6,47 +6,20 @@
     <title>Week 1</title>
 
     <style>
-
+      h1 { font-family: "Helvetica Neue"; font-weight: normal;}
+      li { font-weight: bold; color: blue; border: solid 1px black; }
     </style>
   </head>
 
   <body>
 
-
-    <script>
-      function displayName(name) {
-        document.write("Howdy, " + name);
-        var a = 5
-        document.write(a);
-      }
-      function displayToConsole(name) {
-        console.debug("Howdy, " + name);
-      }
-      function getName(f) {
-        var name = prompt("Wazzzzzup");
-        f(name);
-      }
-
-    </script>
-
     <h1>Grocery List</h1>
 
-    <p><button onclick="addItem();">Add Item</button></p>
-
     <ul>
-
+      <li>Cookies</li>
+      <li>Ice Cream</li>
+      <li>More Cookies</li>
     </ul>
-
-    <script>
-      ul = document.getElementsByTagName("ul")[0];
-      function addItem() {
-        var food = prompt("What should we buy?")
-        var list_item = document.createElement("li");
-        var text_content = document.createTextNode(food);
-        list_item.appendChild(text_content);
-        ul.appendChild(list_item);
-      }
-    </script>
 
   </body>
 
