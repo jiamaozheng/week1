@@ -31,7 +31,7 @@
 
     <h1>Grocery List</h1>
 
-    <p><a href="#" onclick="alert('Hello!');">Add Item</a></p>
+    <p><button onclick="addItem();">Add Item</button></p>
 
     <ul>
 
@@ -39,10 +39,13 @@
 
     <script>
       ul = document.getElementsByTagName("ul")[0];
-      list_item = document.createElement("li");
-      text_content = document.createTextNode("Ice Cream");
-      list_item.appendChild(text_content);
-      ul.appendChild(list_item);
+      function addItem() {
+        var food = prompt("What should we buy?")
+        var list_item = document.createElement("li");
+        var text_content = document.createTextNode(food);
+        list_item.appendChild(text_content);
+        ul.appendChild(list_item);
+      }
     </script>
 
   </body>
